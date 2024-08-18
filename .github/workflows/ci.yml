@@ -11,7 +11,7 @@ jobs:
 
     strategy:
       matrix:
-        node-version: [12.x]
+        node-version: [14.x]
 
     steps:
       - name: Checkout repository
@@ -24,14 +24,14 @@ jobs:
 
       - name: Install dependenceies
         run: npm install
-        working-diretory: ./worksheet2/my-react-app
+        working-directory: ./worksheet2/my-react-app
 
       - name: Run the tests
         run: npm test
-        working-diretory: ./worksheet2/my-react-app
+        working-directory: ./worksheet2/my-react-app
 
       - name: Build
         run: npm run build
-        working-diretory: ./worksheet2/my-react-app
+        working-directory: ./worksheet2/my-react-app
         
     
